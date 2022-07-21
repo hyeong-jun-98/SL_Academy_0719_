@@ -31,9 +31,8 @@ public class Game {
 //            }
 //        }
         // 수학 공식으로
-        int result_pc = pc -me;
 
-        if((result_pc == 1)  || (result_pc == -2)) {
+        if((pc - me == 1)  || (pc - me == -2)) {
             System.out.println("컴퓨터 승리");
         } else if (pc == me) {
             System.out.println("비겼습니다");
