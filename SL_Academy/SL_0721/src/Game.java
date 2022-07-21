@@ -17,19 +17,28 @@ public class Game {
         System.out.println("컴퓨터 : " + pc + " -> " + arr[pc-1]);
 
         // 승부
-        if (pc == 3 && me == 1) {
-            System.out.println("사용자 승리");
-        } else if (pc == 1 && me == 3) {
+//        if (pc == 3 && me == 1) {
+//            System.out.println("사용자 승리");
+//        } else if (pc == 1 && me == 3) {
+//            System.out.println("컴퓨터 승리");
+//        } else {
+//            if (pc > me) {
+//                System.out.println("컴퓨터 승리");
+//            } else if (me == pc) {
+//                System.out.println("비겼습니다");
+//            } else {
+//                System.out.println("사용자 승리");
+//            }
+//        }
+        // 수학 공식으로
+        if((pc - me == 1)  || (pc - me == -2)) {
             System.out.println("컴퓨터 승리");
+        } else if (pc == me) {
+            System.out.println("비겼습니다");
         } else {
-            if (pc > me) {
-                System.out.println("컴퓨터 승리");
-            } else if (me == pc) {
-                System.out.println("비겼습니다");
-            } else {
-                System.out.println("사용자 승리");
-            }
+            System.out.println("사용자 승리");
         }
+
 
 //         PC가 뭘 냈는지 알아보는 방법 (조건문 이용)
 
