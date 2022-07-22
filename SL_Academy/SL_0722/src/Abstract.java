@@ -30,7 +30,6 @@ class IronMan extends Avengers implements Smoker  {
         // 완성은 여기서
     }
 }
-
 class Hulk extends Avengers {
     private int size;
 
@@ -59,38 +58,8 @@ class Hulk extends Avengers {
     }
 }
 
- class Human {
-    private String name;
-    private int age;
-
-    public Human() {
-    }
-
-    public Human(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
-
 public class Abstract {
     public static void main(String[] args) {
-
 //        IronMan avengers = new IronMan("아이언맨", 40);
 //        Hulk avengers1 = new Hulk("헐크", 100);
 //        avengers.print();
@@ -109,8 +78,5 @@ public class Abstract {
 //        };
 //        a.print();
 //        a.Attack();
-
-
-
     }
 }
