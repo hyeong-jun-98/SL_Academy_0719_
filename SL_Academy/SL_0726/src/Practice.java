@@ -3,15 +3,13 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import javax.net.ssl.HttpsURLConnection;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Practice {
     public static void main(String[] args) {
+
 
         String address = "https://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2818579500";
         try {
