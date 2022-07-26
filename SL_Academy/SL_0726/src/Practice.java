@@ -21,8 +21,8 @@ public class Practice {
                 InputStream inputStream = huc.getInputStream();
 //                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
 //                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-                String line = null;
-                //
+                //    String line = null;
+
                 XmlPullParserFactory xppf = XmlPullParserFactory.newInstance();
                 XmlPullParser xpp = xppf.newPullParser();
                 xpp.setInput(inputStream, "utf-8");
@@ -44,7 +44,7 @@ public class Practice {
 //                        System.out.println(xpp.getText());
                     } else if (what == XmlPullParser.END_TAG) { // End Tag 출력
                         t = "";  // 엔터까지 같이 읽혀서 텍스트로 엔턱자 읽힌다. 그래서 t를 빈 값으로 만들어주고
-                                 // 그 뒤에가 출력되지 않게 빈 값으로 저장해놓은것,
+                        // 그 뒤에가 출력되지 않게 빈 값으로 저장해놓은것,
 //                        System.out.println(xpp.getName());
                     }
                     xpp.next();
@@ -54,9 +54,7 @@ public class Practice {
 //                    System.out.println(line);
 //                }
             } catch (IOException e) {
-
             } catch (XmlPullParserException e) {
-
             }
         } catch (MalformedURLException e) {
 
