@@ -10,7 +10,7 @@ import java.net.URL;
 public class Practice {
     public static void main(String[] args) {
 
-
+//
         String address = "https://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=2818579500";
         try {
             URL url = new URL(address);
