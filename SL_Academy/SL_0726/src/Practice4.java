@@ -16,7 +16,7 @@ public class Practice4 {
             URL url = new URL(address);
             HttpURLConnection huc = (HttpURLConnection) url.openConnection();
             InputStream is = huc.getInputStream();
-            InputStreamReader isr = new InputStreamReader(is);
+            InputStreamReader isr = new InputStreamReader(is, "utf-8");
 //            BufferedReader br = new BufferedReader(isr);
 //            System.out.println(br.readLine());
 
