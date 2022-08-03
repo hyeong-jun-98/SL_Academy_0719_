@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SL_0719:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SL_0719_jar</output-path>
+    <root id="archive" name="SL_0719.jar">
+      <element id="module-output" name="SL_0719" />
+    </root>
+  </artifact>
+</component>

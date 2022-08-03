@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SLAcademy.iml" filepath="$PROJECT_DIR$/.idea/SLAcademy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_0719/SL_0719.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_0719/SL_0719.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_0720/SL_0720.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_0720/SL_0720.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_0721/SL_0721.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_0721/SL_0721.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_0722/SL_0722.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_0722/SL_0722.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_0725/SL_0725.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_0725/SL_0725.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_0726/SL_0726.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_0726/SL_0726.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_0727/SL_0727.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_0727/SL_0727.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_0728_DB/SL_0728_DB.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_0728_DB/SL_0728_DB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SL_Academy/SL_Academy.iml" filepath="$PROJECT_DIR$/SL_Academy/SL_Academy.iml" />
+    </modules>
+  </component>
+</project>
