@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-//
+
 public class Practice4 {
     public static void main(String[] args) {
         String address = "http://openapi.seoul.go.kr:8088/sample/json/CardSubwayStatsNew/1/5/20151101";
