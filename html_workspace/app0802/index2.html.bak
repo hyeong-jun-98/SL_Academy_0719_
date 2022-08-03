@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>웹사이트 레이아웃</title>
+  <style>
+
+	button {
+	background:yellow;
+	font-size:20px
+	}
+table {
+border :10px dotted red;
+background:skyblue;
+}
+p{
+background:orange
+}
+  </style>
+ </head>
+ <body>
+	<table width = "800px" align = "center" >
+		<tr>
+			<td align="center">
+				<button>Home</button>
+				<button >Product</button>
+				<button >Cart</button>
+				<button >CS</button>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<p>아이폰(영어: iPhone)은 미국의 기업 애플이 디자인하고 마케팅한 터치스크린 기반 휴대 전화 계열이다. 애플의 iOS 모바일 운영 체제를 사용한다. 1세대 아이폰은 애플의 공동 창립자 스티브 잡스가 2007년 1월 9일 발표하였고 제품은 2007년 6월 29일 출시되었다. 그 뒤로 애플은 해마다 새로운 아이폰 모델과 iOS 업데이트를 출시해왔다. 2018년 11월 1일 기준으로, 22억대 이상의 아이폰이 판매되었다.</p>
+				<p>아이폰(영어: iPhone)은 미국의 기업 애플이 디자인하고 마케팅한 터치스크린 기반 휴대 전화 계열이다. 애플의 iOS 모바일 운영 체제를 사용한다. 1세대 아이폰은 애플의 공동 창립자 스티브 잡스가 2007년 1월 9일 발표하였고 제품은 2007년 6월 29일 출시되었다. 그 뒤로 애플은 해마다 새로운 아이폰 모델과 iOS 업데이트를 출시해왔다. 2018년 11월 1일 기준으로, 22억대 이상의 아이폰이 판매되었다</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+			Copyright 2022 all reserved
+			<font style="font-size:50px">사업자 번호</font> : 1233-645321341532
+		
+			</td>
+		</tr>
+	</table>
+ </body>
+</html>
