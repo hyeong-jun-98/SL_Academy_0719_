@@ -12,7 +12,7 @@ public class Practice {
 //        System.out.println("x * y = " + (x * y));
 //        System.out.println("x / y = " + (double)(x / y));
 //    }
-
+//
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        Practice.cal(10,5);
