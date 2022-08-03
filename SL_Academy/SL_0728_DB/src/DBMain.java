@@ -3,6 +3,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBMain {
+    //
     public static void main(String[] args) {
         String addr = "jdbc:oracle:thin:@192.168.25.81:1521:XE";
         Connection con = null;
