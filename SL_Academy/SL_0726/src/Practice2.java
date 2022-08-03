@@ -12,7 +12,7 @@ public class Practice2 {
     // data.go.kr
     // data.seoul.go.kr
     // data.gg.go.kr
-    //
+
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
         String address = "http://openapi.seoul.go.kr:8088/575a4655496b636839386f58586542/xml/RealtimeCityAir/1/25/";
         FileOutputStream fos1 = new FileOutputStream("D:\\weather.txt");
