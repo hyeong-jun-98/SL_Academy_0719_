@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>마블영화정보</title>
+    <style>
+        #wrapper {
+            width: 800px;
+            height: 700px;
+            background: yellow;
+            margin: auto;
+            overflow: hidden;
+            /*자식이 float 일 때 부모의 영역에 반드시 이 속성을 부여한다.*/
+
+        }
+
+        #photo-area {
+            width: 400px;
+            height: 600px;
+            background: green;
+            float: left;
+        }
+
+        #content-area {
+            width: 400px;
+            height: 600px;
+            background: #A9BCF5;
+            float: left;
+            font-size: 30px;
+
+
+        }
+
+        #thumb-area {
+            width: 100%;
+            height: 100px;
+            background: #BE81F7;
+            float: left;
+
+        }
+
+        #bt_prev {
+            float: left;
+            width: 50px;
+            height: 100px;
+        }
+
+        #bt_next {
+            float: right;
+            width: 50px;
+            height: 100px;
+        }
+
+        #box {
+            float: left;
+            width: 700px;
+            height: 100px;
+            background: #F5DA81;
+            position: relative;
+            left: -200px;
+        }
+
+        #mask {
+            /* 20개의 이미지를 다 보여줄 수 없기 때문에, 10개를 넘어가는 영역을 가리키기 위한 마스크*/
+
+        }
+    </style>
+    <script src="./data.js"></script>
+    <script>
+        var wrapper;
+        var photoArea;
+        var contentArea;
+        var thumbArea;
+        var movieImg;       // 좌측에 보여징 영화 포스터
+        var box;
+
+        // 사진을 동적으로 생성하여 좌측 div에 보여주기
+        function showImg(obj, path) {     // 이미지 돔응 매개변수로 받아 사진 교체
+            obj.src = path;
+        }
+        function showContent(title, year, budget, gross, time) {
+            var tag = "제목 : " + title + "<br>";
+            tag = tag + "개봉연도 : " + year + "<br>";
+            tag = tag + "예산 : " + budget + "<br>";
+            tag = tag + "총 수익 : " + gross + "<br>";
+            tag = tag + "러닝 타임 : " + time + "<br>";
+
+            contentArea.innerHTML = tag;  // innerText : <>이 부분의 텍스트 호출<>, innerHTML : 태그를 인정해줌 <br>
+        }
+
+        function showThumbList() {      // 10개의 썸네일 이미지를 출력한다. (이미지 1개당 65 + 5를 10개)
+            for (var i = 0; i < movies.marvel.length; i++) {
+                var img = document.createElement("img");
+                img.src = movies.marvel[i].url;
+                img.style.width = 65 + "px";
+                img.style.margin = 5 + "px";
+                box.appendChild(img);
+            }
+
+        }
+
+        addEventListener("load", function () {        // 문서가 로드되면...
+            wrapper = document.getElementById("wrapper");        // 전역변수들은 비어있어서 이렇게 해줘야한다.
+            photoArea = document.getElementById("photo-area");
+            contentArea = document.getElementById("content-area");
+            thumbArea = document.getElementById("thumb-area");
+            box = document.getElementById("box");
+
+            movieImg = document.createElement("img");       // 이미지 돔 생성
+            movieImg.style.width = 400 + "px";
+            movieImg.style.height = 600 + "px";
+            photoArea.appendChild(movieImg);        // 영화 이미지를 포토 영역에 붙여넣는다.
+            showImg(movieImg, movies.marvel[0].url);  // 경로  movie의 marvel의 0번쨰 배열의 url 접속
+            showContent(movies.marvel[0].title, movies.marvel[0].release_year, movies.marvel[0].budget, movies.marvel[0].gross, movies.marvel[0].running_time);
+            showThumbList();
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="photo-area"></div>
+        <div id="content-area"></div>
+        <div id="thumb-area">
+            <button id="bt_prev">이전</button>
+            <div id="mask">
+                <div id="box"></div>
+            </div>
+            <button id="bt_next">다음</button>
+        </div>
+
+    </div>>
+
+</body>
+
+</html>
