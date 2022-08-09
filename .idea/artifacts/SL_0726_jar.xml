@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="SL_0726:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/SL_0726_jar</output-path>
-    <root id="archive" name="SL_0726.jar">
-      <element id="module-output" name="SL_0726" />
-      <element id="extracted-dir" path="$USER_HOME$/Desktop/형준/kxml2-2.3.0.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
