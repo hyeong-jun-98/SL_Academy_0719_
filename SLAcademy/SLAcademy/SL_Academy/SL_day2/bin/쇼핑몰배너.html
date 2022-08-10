@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        #mask {
+            width: 500px;
+            height: 120px;
+            background: yellow;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid red;
+            /*자식의 포지션이 설정되면 부모도 포지션을 설정해야 한다.*/
+        }
+    </style>
+    <script src="./Product.js"></script>
+    <script src="./data.js"></script>
+
+    <script>
+        var velX = 0;  // left 값을 몇 픽셀 씩 이동할 지
+        var productArray = [];
+        var flag = true;  // 초기에는 움직이도록
+
+        // 브라우저가 떠있는 동안, 즉 프로그램이 가동되고 있는 한 무한루프로 move() 함수 호출할 영역
+        function auto() {
+          if(flag) {
+            for (var i = 0; i < 7; i++) {
+                productArray[i].x = productArray[i].x-1;
+                productArray[i].move();
+
+                
+                
+            }
+            setTimeout("auto()", 10);  // 1000분의 10초뒤에 auto() 호출
+        }
+    }
+
+
+        function init() {
+            // 이미지를 7개 생성하여 컨텐츠를 생성한다.
+            for (var i = 0; i < 7; i++) {
+                var arr = movies.marvel;    // 양화 배열
+                var path = arr[i].url;
+                var width = 90;
+                var x = (width + 5) * i + 5;
+                productArray[i] = new Product(document.getElementById("mask"), path, width, 90, x, 5);     // 사진 경로, 크기, 컨테이너 설정
+            }
+
+        }
+
+        window.addEventListener("load", function () {
+            init();
+            auto();
+        })
+
+    </script>
+</head>
+
+<body>
+    <div id="mask">
+
+
+    </div>
+
+</body>
+
+</html>

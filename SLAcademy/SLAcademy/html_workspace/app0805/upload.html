@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>이미지 등록폼</title>
+<style>
+	textarea {
+		width : 99%;
+		height : 200px;
+	}
+
+</style>
+<script>
+	function checkValid() {  // 유효성 체크
+		var title = document.querySelector("input[name='title']");
+		var spot = document.querySelector("input[name='spot']");
+		var detail = document.querySelector("textarea[name='detail']");
+		var myfile = document.querySelector("input[name='myfile']");
+		
+		if(title.value.length < 1){
+			alert("제목을 입력하시오");
+			title.focus();
+		} else if(spot.value.length < 1) {
+			alert("장소를 입력하시오");
+			spot.focus();
+		}else if(detail.value.length < 1) {
+			alert("설명을 입력하시오");
+			detail.focus();
+		}
+		else if(myfile.value.length < 1) {
+			alert("파일을 입력하시오");
+			
+		} else {
+			// 서버에 등록
+			var frm = document.querySelector("form");
+			frm.action="../save.jsp";  // 이 업로드 요청을 받을 서버상의 jsp 주소
+			frm.method="post"; // 바이너리 파일 떄문에, 용량이 크므로 POST 방식으로 잔송해야 한다.
+			frm.submit();		// 서버에 전송하는 시점. 
+		}
+
+	}
+
+	function getList() {
+		// 등록된 사진 조회
+		location.href = "list.jsp";		// js의 링크
+
+	}
+
+
+	window.addEventListener("load", function() {
+		var bt = document.querySelector("#bt");
+		bt.addEventListener("click", function() {
+			checkValid();
+
+		});
+
+
+	});
+
+</script>
+
+</head>
+<body >
+	<form enctype = "multipart/form-data">		<!--//서버에 폼 양식을 전송 시, 만일 텍스트 뿐만 아니라 마이너리 파일이 포함된 경우 반드시 아래의 속성이 명시되어야 한다 -->
+		<table width =  "600px" border = "1px" align="center">
+			<tr>
+				<td align = "center" colspan ="2">관광지 등록</td>
+			</tr>
+			<tr>
+				<td>사진제목</td>
+				<td><input type="text" name = "title"></td>
+			</tr>
+			<tr>
+				<td>장소</td>
+				<td><input type="text" name = "spot"></td>
+			</tr>
+				<td >설명</td>
+				<td><textarea name = "detail"></textarea></td>
+			</tr>
+			<tr>
+				<td>사진</td>
+				<td><input type="file" name = "myfile"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type = "button" value = "등록" id = "bt">
+					<input type = "button" value = "목록"  onCLick= "getList()">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>web0808</display-name>
+ 
+ <servlet>
+ <servlet-name>testServlet</servlet-name>
+ <servlet-class>web0808.servlet.MyServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ 	<servlet-name>testServlet</servlet-name>
+ 	<url-pattern>/test</url-pattern>  <!-- test라고 매핑 -->
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>GuGuServlet</servlet-name>
+ <servlet-class>web0808.servlet.Servlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ 	<servlet-name>GuGuServlet</servlet-name>
+ 	<url-pattern>/gugu</url-pattern>
+ </servlet-mapping>
+  
+  
+  
+  
+  
+</web-app>

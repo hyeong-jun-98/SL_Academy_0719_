@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="SLAcademy/html_workspace/app0809"/>
+	<classpathentry kind="src" path="SLAcademy/javase_workspace/project0801/src"/>
+	<classpathentry kind="src" path="SLAcademy/javase_workspace/project0802/src"/>
+	<classpathentry kind="src" path="SLAcademy/javase_workspace/SL_0801"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_0719/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_0720/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_0721/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_0722/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_0725/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_0726/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_0727/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_0728_DB/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/SL_day2/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/src"/>
+	<classpathentry kind="src" path="SLAcademy/SL_Academy/web0808/src/main/java"/>
+	<classpathentry kind="lib" path="SLAcademy/html_workspace/app0803/WEB-INF/lib/mysql-connector-java-5.1.49.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/html_workspace/app0803/WEB-INF/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/html_workspace/app0804/WEB-INF/lib/mysql-connector-java-5.1.49.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/html_workspace/app0804/WEB-INF/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/html_workspace/app0805/WEB-INF/lib/cos.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/html_workspace/app0805/WEB-INF/lib/mysql-connector-java-5.1.49.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/html_workspace/app0805/WEB-INF/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/out/artifacts/SL_0720_jar2/SL_0720.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/out/artifacts/SL_0726_jar/SL_0726.jar"/>
+	<classpathentry kind="lib" path="SLAcademy/SL_Academy/out/artifacts/SL_0719_jar/SL_0719.jar"/>
+	<classpathentry kind="output" path="SLAcademy/SL_Academy/SL_day2/bin"/>
+</classpath>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+    <style>
+        #wrapper {
+            width: 400px;
+            height: 200px;
+            border: 5px solid cyan;
+            margin: auto;
+        }
+        input {
+            width: 95%;
+            height: 45px;
+            background: #d5d5d5;
+            font-size: 24px;
+        }
+
+        div {
+            margin-bottom: 5px;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    function checkValid() {
+        // 아이디 비밀번호 유효성 검증
+        var id = document.querySelector("input[name = 'id']");
+        var password = document.querySelector("input[name = 'password']");
+
+        if(id.value.length < 1) {
+            alert("아이디를 입력하세요.");
+            id.focus();
+        } else if(password.value.length < 1) {
+            alert("비밀번호를 입력하시오.");
+            password.focus();
+        }
+
+    }
+
+        $(document).ready(function() {
+        
+            $("#test").animate({
+                "left" : "0px"
+            })
+
+            $("button").click(function() {
+                checkValid();
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div style="position: relative; left : -400px;" id="test">
+            <input type="text" placeholder="input your id..." name="id">
+        </div>
+        <div>
+            <input type="password" placeholder="input your password..." name ="password">
+        </div>
+        <div style = "text-align: center;">
+            <button>로그인</button>
+        </div>
+    </div>
+    
+</body>
+</html>
