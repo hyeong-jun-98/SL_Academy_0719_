@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Practice {
-    //
+    //  XML 파일 추출 변환 출력
     public static void main(String[] args) {
 
 //
