@@ -1,5 +1,5 @@
 class IronMan extends Avengers implements Smoker  {
-    //
+
     private int age;
 
     public IronMan(String name, int age) {
