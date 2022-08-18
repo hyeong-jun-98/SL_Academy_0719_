@@ -1,5 +1,5 @@
 // 어벤져스는 추상적인 개념이다.
-public abstract class Avengers {
+public abstract class Avengers {    //
     private String name;
     public Avengers(String name) {
         this.name = name;
