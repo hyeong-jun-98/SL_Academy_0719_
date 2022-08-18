@@ -3,7 +3,7 @@ import com.hojong.Jul22push.work.Work;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Test extends Random implements Work {
+public class Test extends Random implements Work {  //
     Random rd = new Random();
     Scanner sc = new Scanner(System.in);
     int num;
