@@ -2,7 +2,7 @@ package member;
 
 import java.util.Scanner;
 
-public class Member {
+public class Member {//
 
 	private String name, id, pass, phone;
 
@@ -10,19 +10,19 @@ public class Member {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.print("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 		this.name = sc.nextLine();
-		System.out.print("¾ÆÀÌµð¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.print("ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 		this.id = sc.nextLine();
-		System.out.print("ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.print("ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 		this.pass = sc.nextLine();
-		System.out.print("ÇÚµåÆù¹øÈ£ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.print("ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½È£ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½");
 		this.phone = sc.nextLine();
 		
 	}
 
 	public void putMemberInfo() {
-		System.out.println("name :" + name + " ID :" + id + " ºñ¹Ð¹øÈ£ :" + pass + " ÇÚµåÆù :" + phone);
+		System.out.println("name :" + name + " ID :" + id + " ï¿½ï¿½Ð¹ï¿½È£ :" + pass + " ï¿½Úµï¿½ï¿½ï¿½ :" + phone);
 	}
 
 	public String getMemberName() {

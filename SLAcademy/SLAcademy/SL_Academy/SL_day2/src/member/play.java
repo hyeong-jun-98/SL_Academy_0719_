@@ -1,6 +1,6 @@
 package member;
 
-public class play {
+public class play {//
 
 	public static void main(String[] args) {
 		
@@ -18,7 +18,7 @@ public class play {
 	        for (int i = 0; i < m_box.length; i++) {
 	            m_box[i].setMemberInfo();
 	            tmpName = m_box[i].getMemberName();
-	            System.out.println("¹ÝÈ¯µÈ ÀÌ¸§ : " + tmpName);
+	            System.out.println("ï¿½ï¿½È¯ï¿½ï¿½ ï¿½Ì¸ï¿½ : " + tmpName);
 	            m_box[i].putMemberInfo();
 	        }
 	    }
