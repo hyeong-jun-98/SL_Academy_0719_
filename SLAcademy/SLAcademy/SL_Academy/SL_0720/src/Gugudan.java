@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Gugudan {
+public class Gugudan {  //
     public static void main(String[] args) {
         // 단수 입력 구구단
 //        Scanner sc = new Scanner(System.in);
