@@ -1,6 +1,6 @@
 package com.SL_0720.main;
 
- class Pen {
+ class Pen {    //
 //    String name;
 //    int price;
 //
