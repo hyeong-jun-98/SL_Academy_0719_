@@ -1,5 +1,5 @@
 
-class Me {
+class Me {  //
 
     // static이 붙어야 하는 상황이 맞는건지
     // 나는 하나니까 static을 붙인다.
