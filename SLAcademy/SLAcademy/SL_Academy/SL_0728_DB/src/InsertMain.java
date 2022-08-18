@@ -4,7 +4,7 @@ import java.sql.PreparedStatement;
 
 public class InsertMain {
     public static void main(String[] args) {
-        //
+
         String addr = "jdbc:oracle:thin:@192.168.25.81:1521:XE";
         Connection con = null;
         PreparedStatement pstmt = null;
