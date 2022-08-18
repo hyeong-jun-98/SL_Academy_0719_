@@ -8,7 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Practice2 {
+public class Practice2 {    //
     // data.go.kr
     // data.seoul.go.kr
     // data.gg.go.kr
