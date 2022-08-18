@@ -1,4 +1,4 @@
-class Product {
+class Product { //
     // 다형성
     public void print() {
         System.out.println("나는 Product 입니다.");
