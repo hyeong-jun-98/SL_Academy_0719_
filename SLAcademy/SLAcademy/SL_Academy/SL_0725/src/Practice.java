@@ -5,7 +5,7 @@ import java.net.URL;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Practice {
+public class Practice { //
 //    public static void cal(int x, int y) {
 //        System.out.println("x + y = " + (x + y));
 //        System.out.println("x - y = " + (x - y));
