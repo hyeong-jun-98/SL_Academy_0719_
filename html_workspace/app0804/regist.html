@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+	input{
+		background:#d5d5d5;
+		border:1px solid gray;
+	}
+
+</style>
+<script>
+// 취미를 체크할 때 카윤트 누적
+var  hobbyCount = 0;
+
+// 유효성 체크함서 정의 : db에 넣으면 너무나 많은 사용자의 검증되지 않은 데이터가 들어갈 수 있고,
+// 서버에 큰 부담을 주므로, 서버에 넣기전에 클라이언트 똑에서 미리 검증을 거치는게 좋다.
+function checkValid() {
+
+	// 아이디 검증 : 문서 내의 user_id의 겂이 없을경우 ㅗ
+	/*var user_id = document.getElementById("user_id");
+	console.log("사용자가 입력한 값 : ", user_id);
+	
+	if(user_id.value.length < 1) {
+		alert("아이디를 입력하시오.");
+		user_id.focus();
+		return;
+	}
+	
+
+	// 비밀번호 확인
+	var pass = document.getElementById("pass");
+	if(pass.value < 1) {
+		alert("비밀번호를 입력하시오.");
+		pass.focus();
+		return;
+	}
+	var pass2 = document.getElementById("pass2");
+	if(pass.value != pass2.value) {
+		alert("비밀번호가 다릅니다..");
+		pass2.focus();
+		return;
+	}
+
+
+// 이름
+var user_name = document.getElementById("user_name");
+	if(user_name.value =="") {
+		alert("이름을 확인하세요.");
+		user_name.focus();
+		return;
+	}
+// 메일
+var mail_id = document.getElementById("mail_id");
+	if(mail_id.value =="") {
+		alert("이름을 확인하세요.");
+		mail_id.focus();
+		return;
+	}
+var hobbyArray = document.getElementsByName("hobby");
+hobbyCount = 0; // 가입하기 버튼을 누를 때마다 체크용 변수 초기화
+
+for(var i = 0; i < hobbyArray.length;i++) {
+	if(hobbyArray[i].checked==true) {
+		hobbyCount++;
+		}
+}
+//ssd
+if(hobbyCount == 0) {
+	alert("적어도 하나의 취미는 선택하시오.");
+	return;  // 못 지나가게 막는다.
+} */
+//
+// 폼 양식으로 감싼 요소들을 우리의 톰캣 서버로 전송한다.
+var memberForm = document.getElementById("memberForm");
+
+memberForm.action="/member/regist.jsp";  // 톰캣서버의 회원가입 처리 jsp 명시
+memberForm.method="post";
+memberForm.submit();  // 이 시점에 데이터 전송
+}
+
+// 사용자가 직접 이메일을 입력할 수 있는 텍스트 박스 보이게
+function showDirect() {
+	// mail_server 라는 select 돔의 값이 direct라면
+	if(document.getElementById("mail_server").value == "direct") {
+	document.getElementById("myserver").style.display="block";
+	}
+}
+
+
+function init() {
+	var bt_id = document.getElementById("bt_regist");
+	console.log(bt_id);
+	
+<!-- 	태그에 직접 이벤트를 부여하는 방식이 아닌, 순수한 자바 스크립트를 이용한 이벤트 연결방식-->
+bt_regist.addEventListener("click", function () {
+			console.log("클릭");
+			//유효성 체크
+			 checkValid();
+	});
+
+	var social2 = document.getElementById("social2");
+	var gender = document.getElementsByName("gender");  // ByName 일 때는 Elements
+	social2.addEventListener("keyup", function (e) {
+		console.log("당신이 입력한 성별의 값은 : ", social2.value);
+		if(social2.value == "1") {
+			gender[0].checked=true;
+		} else {
+			gender[1].checked=true;
+
+		}
+
+	});
+}
+
+</script>
+</head>
+<body onLoad = "init()"> <!--  문서가 로드가 되면 inti() -->
+	<form id = "memberForm" >
+	<table width = "800px" border = "1px" align="center">
+		<tr>
+			<td align="center" colspan = "2">회원가입</td>
+		</tr>
+		<tr>
+			<td>ID</td>
+			<td><input type ="text" id ="user_id" name="user_id"></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type ="password" maxlength="12" id = "pass" name="pass"> *8~12자 입력</td>
+		</tr>
+		<tr>
+			<td>비밀번호 확인</td>
+			<td><input type ="password" maxlength="12" id = "pass2" name="pass2"></td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td><input type ="text" id = "user_name" name="user_name"></td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td>
+			<input type ="text" id = "mail_id" name="mail_id"> @
+			<input type ="text" id="myserver" style = "display:none" name = "myserver">
+			<select id = "mail_server" OnChange = "showDirect()">
+				<option value="0">메일 서버 선택</option>
+				<option value="gmail.com">gmail.com</option>
+				<option value="naver.com">naver.com</option>
+				<option value="daum.net">daum.net</option>
+				<option value="direct">직접입력</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+				<td>핸드폰</td>
+				<td>
+				<select name ="tel1">
+					<option value = "010">010</option>
+					<option value = "016">016</option>
+					<option value = "017">017</option>
+					<option value = "018">018</option>
+					<option value = "019">019</option>
+				</select>-
+				<input type ="text" name ="tel2"> -
+				<input type ="text" name ="tel3">
+				</td>
+			</tr>
+			<tr>
+				<td>주민번호</td>
+				<td>
+				<input type ="text" maxsize="6" name = "social1"> -
+				<input type ="text" maxsize="7" id="social2" name = "social2">
+				</td>
+			</tr>
+			<tr>
+				<td>성별</td>
+				<td>
+				남자<input type ="radio" name="gender" value = "남">
+				여자<input type ="radio" name="gender" value = "남">
+				</td>
+			</tr>
+			<tr>
+				<td>취미</td>
+					<td>
+					운동<input type ="checkbox" name = "hobby" value = "운동">
+					독서<input type ="checkbox" name = "hobby" value = "독서">
+					게임<input type ="checkbox" name = "hobby" value = "게임">
+					영화<input type ="checkbox" name = "hobby" value = "영화">
+					</td>
+				</tr>
+		<tr>
+			<td align="center" colspan = "2">
+				<input type="button" id ="bt_regist" value="가입하기">
+				<button id ="bt_reset">다시 작성</button>
+			</td>
+		</tr>
+
+	</table>
+	</form>
+
+</body>
+</html>
