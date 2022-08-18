@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Number_baseball extends Random {
+public class Number_baseball extends Random {   //
 
 
     static Random rd = new Random();
