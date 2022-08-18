@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class GuGuServlet extends HttpServlet {
+public class GuGuServlet extends HttpServlet {//
 	@Override
-	// POST µîÀ» ¸í½ÃÇÏÁö ¾Ê´Â ÇÑ ±âº»ÀûÀ¸·Î ºê¶ó¿ìÀúÀÇ ¿äÃ»À» default°¡ GET ¹æ½ÄÀÌ°í, GET ¹æ½ÄÀ¸·Î µé¾î¿Â ¿äÃ»Àº doGET()
-	// ¸Þ¼­µå°¡ Ã³¸®ÇÑ´Ù
+	// POST ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ï¿½ ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ defaultï¿½ï¿½ GET ï¿½ï¿½ï¿½ï¿½Ì°ï¿½, GET ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ doGET()
+	// ï¿½Þ¼ï¿½ï¿½å°¡ Ã³ï¿½ï¿½ï¿½Ñ´ï¿½
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		PrintWriter out = response.getWriter(); // ¹®ÀÚ ±â¹ÝÀÇ Ãâ·Â ½ºÆ®¸²
+		PrintWriter out = response.getWriter(); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½
 		out.print("<table width = '200px' border = '1px'>");
 		for (int i = 1; i <= 9; i++) {
 			out.print("<tr>");

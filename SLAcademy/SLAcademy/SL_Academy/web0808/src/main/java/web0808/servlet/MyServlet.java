@@ -7,18 +7,18 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-//°í¾çÀÌ¸¸ ¼­ºí¸´À» ÀÛ¼ºÇÒ ¼ö ÀÖ´Â °ÍÀÌ ¾Æ´Ï¶ó, °³¹ßÀÚµµ ÀÛ¼ºÇÒ ¼ö ÀÖ´Ù.
-// MyServletÀº ¼­¹ö¿¡¼­ ½ÇÇàµÉ ¼ö ÀÖ´Â ¼­ºí¸´ÀÌ´Ù.
+//
+//ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
+// MyServletï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½.
 public class MyServlet extends HttpServlet{
 	
-	// Å¬¶óÀÌ¾ÈÆ®°¡ ¾Æ¹«°Íµµ ¸í½ÃÇÏÁö ¾Ê°í ¿äÃ»À» ÇÒ °æ¿ì default´Â GET ¹æ½ÄÀ¸·Î µé¾î¿Â´Ù.
-	// GET ¹æ½ÄÀÇ ¿äÃ»À» ¹Þ´Â ¼­ºí¸´ÀÇ ¸Þ¼­µå°¡ ¾Æ·¡¿Í °°Àº doGet() ¸Þ¼­µåÀÌ´Ù.
+	// Å¬ï¿½ï¿½ï¿½Ì¾ï¿½Æ®ï¿½ï¿½ ï¿½Æ¹ï¿½ï¿½Íµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ defaultï¿½ï¿½ GET ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â´ï¿½.
+	// GET ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼ï¿½ï¿½å°¡ ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ doGet() ï¿½Þ¼ï¿½ï¿½ï¿½ï¿½Ì´ï¿½.
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
-		PrintWriter out = response.getWriter(); // ÀÀ´äÁ¤º¸ °´Ã¼·ÎºÎÅÍ Ãâ·Â ½ºÆ®¸²À» ¾ò´Â´Ù.
+		PrintWriter out = response.getWriter(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â´ï¿½.
 		out.print("hi my name is hj.");
 	}
 }
