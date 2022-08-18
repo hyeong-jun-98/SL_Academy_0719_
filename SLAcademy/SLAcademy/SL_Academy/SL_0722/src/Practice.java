@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Practice {
+public class Practice { //
     public static void main(String[] args) {
         char[] arr = {'ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ'};
         // 0,1,2,3,4
