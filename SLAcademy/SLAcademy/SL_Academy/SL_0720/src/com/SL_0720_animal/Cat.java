@@ -1,6 +1,6 @@
 package com.SL_0720_animal;
 
-public class Cat  extends Animal{
+public class Cat  extends Animal{   //
     public Cat() {
 
     }
