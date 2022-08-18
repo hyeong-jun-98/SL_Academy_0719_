@@ -11,7 +11,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Scanner;
 
-public class Practice3 {
+public class Practice3 {    //
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
